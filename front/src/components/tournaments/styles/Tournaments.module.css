@@ -1,0 +1,16 @@
+.submainDiv{
+    background-image: url("../../../img/tournaments_bg.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: auto;
+    /* height: 500px; */
+    padding-top: 57%;
+    /* background-size: cover; */
+}
+
+.formAndList{
+    margin-top: -43%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

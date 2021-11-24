@@ -1,0 +1,252 @@
+.info {
+    width: 100%;
+    min-height: 100vh;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+    
+    position: fixed;
+    top: 0;
+    left: 0;    
+    z-index: 999;
+    
+    background-color: var(--transBlackColor);
+}
+
+.container {
+    width: 50%;
+    height: 80vh;
+
+    position: relative;
+    right:auto;
+    left: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    /* background: rgb(161, 157, 157); */
+    background-color: white;
+    /* border-radius: var(--bRadius); */
+    color: black;
+}
+
+.close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+
+    border: none;
+    border-radius: 4px;
+    text-shadow: 0px 0px 10px rgb(0 0 0 / 50%);
+    overflow: hidden;
+    padding: 5px;
+    font-size: 15px;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    background: transparent;
+    background-image: url('../../img/button1.webp');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    font-family: 'Crayon' ;
+}
+
+.close:hover {
+    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+    transform : scale(1.1);
+}
+
+.isOpen {
+  display: flex;
+}
+
+.player {
+    width: 90%;
+    height: 90%;
+
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+}
+
+.profileIcon {
+    width: 9em;
+    height: auto;
+}
+
+.playerInfo {
+    width: 100%;
+    max-height: 60%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    /* background-color: var(--transBlackColor); */
+    background-color: black;
+    color: #dedede;
+    padding: 2em;
+    /* border-radius: var(--bRadius); */
+}
+
+.playerInfo p {
+    font-size: 1.5rem;
+}
+
+.playerInfo_Games {
+    width: 20em;
+    height: 5em;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.infoGames {
+    width: auto;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inviteBtn {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+
+    border: none;
+    border-radius: 4px;
+    text-shadow: 0px 0px 10px rgb(0 0 0 / 50%);
+    overflow: hidden;
+    padding: 5px;
+    font-size: 1.1rem;
+    color: white;
+    outline: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    background: transparent;
+    background-image: url('../../img/button1.webp');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    font-family: 'Crayon' ;
+}
+
+.inviteBtn:hover {
+    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+    transform : scale(1.1);
+}
+
+
+@media screen and (max-width: 1240px) {
+    .profileIcon {
+        width: 8em;
+    }
+
+    .player {
+        height: 80%;
+    }
+}
+  
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 60%;
+    }
+
+    .profileIcon {
+        width: 7em;
+    }
+
+    .player {
+        height: 80%;
+    }
+
+    .playerInfo h2 {
+        font-size: 1.6rem;
+    }
+
+    .playerInfo h3 {
+        font-size: 1.4rem;
+    }
+
+    .playerInfo p {
+        font-size: 1.2rem;
+    }
+
+    .inviteBtn {
+        top: 27em;
+        left: auto;
+        right: auto;
+    }
+}
+  
+@media screen and (max-width: 768px) {
+    .container {
+        width: 70%;
+    }
+
+    .profileIcon {
+        width: 6em;
+    }
+
+    .player {
+        height: 80%;
+    }
+
+    .playerInfo h2 {
+        font-size: 1.6rem;
+    }
+
+    .playerInfo h3 {
+        font-size: 1.4rem;
+    }
+
+    .playerInfo p {
+        font-size: 1.2rem;
+    }
+
+    .inviteBtn {
+        top: 26em;
+        left: auto;
+        right: auto;
+    }
+}
+  
+@media screen and (max-width: 480px) {   
+    .container {
+        width: 80%;
+    }
+
+    .profileIcon {
+        width: 5em;
+    }
+
+    .player {
+        height: 80%;
+    }
+
+    .playerInfo h2 {
+        font-size: 1.5rem;
+    }
+
+    .playerInfo h3 {
+        font-size: 1.3rem;
+    }
+
+    .playerInfo p {
+        font-size: 1.1rem;
+    }
+
+    .inviteBtn {
+        top: 26em;
+        left: auto;
+        right: auto;
+    }
+}

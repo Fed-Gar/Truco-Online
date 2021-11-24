@@ -1,0 +1,40 @@
+.btn {
+    color: #fff;
+    background-color: #343a40;
+    border-color: #343a40;
+    display: flex;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+
+    margin-bottom: 1em;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.btn:hover {
+    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+    background-color:black;
+}
+
+@media screen and (max-width: 768px) {
+    .btn {
+        margin-top: 1em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .btn {
+        font-size: .8rem;
+        padding: .175rem .35rem;
+    }
+}

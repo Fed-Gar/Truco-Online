@@ -1,0 +1,59 @@
+.fondo {
+        width: 100%;
+        min-height: 100vh;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        background-image: url('../../img/woodBackground.webp');
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+}
+
+.cups {
+   max-width: 1440px; 
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   color : white;
+   padding: 0 30px 0 30px;
+}
+
+.title {
+        position: absolute;
+        top: 20%;
+    
+        font-size: 60px;
+        font-family: 'Crayon';
+        color: black;
+        text-shadow: white 1px 0 10px;
+}
+
+@media screen and (max-width: 960px) {
+     .title {
+        font-size: 2.5rem;
+     }
+} 
+
+@media screen and (max-width: 768px) {
+    .cups {
+        flex-direction: column;
+
+        margin-top: 30%;
+    }
+} 
+
+@media screen and (max-width: 600px) {
+        .title {
+                font-size: 2rem;
+        }
+
+        .cups {
+            margin-top: 32%;
+        }
+}

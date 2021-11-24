@@ -1,0 +1,37 @@
+.contError {
+    width: 100%;
+    height: auto;
+
+    background-image: url('../../img/woodBackground.webp');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding-top: 57%;
+}
+
+.error {
+    width: 35%;
+    height: 150px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+
+    background-color: rgba(1,1,1, .5);
+    border-radius: 1em;
+
+    margin-top: -50%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.error h2 {
+    font-weight: bold;    
+    color:white;
+}
+
+.error p {
+    font-size: 1rem;
+    color: white;
+}

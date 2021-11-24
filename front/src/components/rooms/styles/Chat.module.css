@@ -1,0 +1,176 @@
+.contChat {
+    width: 60%;
+}
+
+.chatLobby {
+    width: 100%;
+    min-height: 60vh;
+    max-height: 60vh;
+
+    overflow: scroll;
+    border: 2px solid black;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.chatGame {
+    width: 93%;
+    min-height: 30vh;
+    max-height: 50vh;
+    margin: 10px;
+    overflow:hidden;
+    border: 5px solid rgb(90, 91, 93);
+    background-color: rgba(255, 255, 255, 0.6);
+    resize: none;
+    outline: none;
+    appearance: none;
+    font-size: larger;
+    font-weight: bolder;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.chatContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.writeMessageGame {
+    margin: 10px;
+    display: flex;
+    width: 93%;
+}
+
+.writeMessage {
+    display: flex;
+}
+
+.btn {
+    color: #fff;
+    background-color: #7f7056;
+    border-color: #343a40;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+} 
+
+@media screen and (max-width: 1440px) {
+    .chatGame{
+        width: 90%;
+        min-height: 35vh;
+        max-height: 35vh;
+        margin: 0px;
+        overflow:hidden;
+        border: 5px solid rgb(90, 91, 93);
+        background-color: rgba(255, 255, 255, 0.6);
+        font-size: mediumg;
+    }
+    .writeMessageGame{
+        margin: 0px;
+        display: flex;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .chatGame{
+        width: 80%;
+        min-height: 35vh;
+        max-height: 35vh;
+        margin: 0px;
+        overflow:hidden;
+        border: 5px solid rgb(90, 91, 93);
+        background-color: rgba(255, 255, 255, 0.6);
+        font-size: small;
+    }
+    .writeMessageGame{
+        margin: 0px;
+        display: flex;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .chatGame{
+        width: 100%;
+        min-height: 10vh;
+        max-height: 10vh;
+        margin: 0px;
+        overflow:hidden;
+        border: 5px solid rgb(90, 91, 93);
+        background-color: rgba(255, 255, 255, 0.6);
+        resize: none;
+        outline: none;
+        appearance: none;
+        font-size: xx-small;
+        font-weight: bolder;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    .writeMessageGame{
+        margin: 0px;
+        display: flex;
+        width: 100%;
+        height: 3vh;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contChat {
+        width: 80%;
+    }
+
+    .btn {
+        font-size: .8rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .chatGame {
+        width: 100%;
+        min-height: 10vh;
+        max-height: 10vh;
+        margin: 0px;
+        overflow:hidden;
+        border: 5px solid rgb(90, 91, 93);
+        background-color: rgba(255, 255, 255, 0.6);
+        font-size: xx-small;
+    }
+    .writeMessageGame {
+        margin: 0px;
+        display: flex;
+        width: 100%;
+        height: 4vh;
+    }
+}
+
+@media only screen 
+and (min-device-width: 320px) 
+and (max-device-width: 900px)
+and (orientation: landscape) {
+    .chatGame{
+        width: 80%;
+        min-height: 30vh;
+        max-height: 30vh;
+        margin: 0px;
+        overflow:hidden;
+        border: 5px solid rgb(90, 91, 93);
+        background-color: rgba(255, 255, 255, 0.6);
+        font-size: xx-small;
+    }
+    .writeMessageGame{
+        margin: 0px;
+        display: flex;
+        width: 80%;
+        height: 4vh;
+    } 
+}

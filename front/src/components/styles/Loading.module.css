@@ -1,0 +1,23 @@
+.load {
+    position: relative;
+    margin-top: auto;
+    margin-bottom: auto;
+
+    font-size: 3rem;
+
+    color: white;
+
+    animation-name: rotation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotation {
+  0% {
+    transform:rotate(0deg);
+  }
+  100% {
+    transform:rotate(360deg);
+  }
+}

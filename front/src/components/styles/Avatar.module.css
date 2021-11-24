@@ -1,0 +1,59 @@
+.avatarContainer {
+    width: 10em;
+    height: 10em;
+
+    background-color: var(--transBlackColor);
+
+    margin:0 .7em 0 0;
+    border-radius: 1rem;
+    padding: .5em;
+}
+
+.avatarContainer:hover {
+    cursor: pointer;
+}
+
+.avatarContainer img {
+    width: 7em;
+    height: 7em;
+}
+
+.avatarContainer p {
+    color: white;
+}
+
+@media screen and (max-width: 1024px) {
+  .avatarContainer {
+    width: 9em;
+    height: 9em;
+  }
+  
+  .avatarContainer img {
+    width: 6.5em;
+    height: 6.5em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .avatarContainer {
+    width: 8em;
+    height: 8em;
+  }
+
+  .avatarContainer img {
+    width: 6em;
+    height: 6em;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .avatarContainer {
+    width: 7em;
+    height: 7em;
+  }
+  
+  .avatarContainer img {
+    width: 5em;
+    height: 5em;
+  }
+}

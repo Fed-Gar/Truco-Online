@@ -1,0 +1,30 @@
+.mainDiv{
+    background-color: rgba(255, 255, 255, 0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: -48% 25%;
+}
+
+.players{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.h1_TournamentId{
+    font-weight: bold;
+    margin-top: 5%;
+}
+
+.playersList{
+    margin-top: 10%;
+    text-align-last: center;
+}
+
+.playerName{
+    font-weight: 300;
+    font-size: xx-large;
+}

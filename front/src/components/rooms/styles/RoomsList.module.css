@@ -1,0 +1,70 @@
+.roomsList {
+
+    background-color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    /* width: auto; */
+    height: 23pc;
+
+    width: 90%;
+    min-height: 3em;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    margin-left: auto;
+    margin-right: auto;
+
+    /* justify-content: left; */
+    /* justify-self: left; */
+    /* justify-items: left; */
+    align-items: center;
+    /* justify-content: center; */
+    
+    padding: .5em;
+    text-align: center;
+}
+
+.roomsList p {
+    color: black;
+}
+
+.roomBtn {
+    background: none;
+    border: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.roomBtn:hover {
+    transform: scale(1.1);
+}
+
+.btn {
+    color: #fff;
+    background-color: #343a40;
+    border-color: #343a40;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.btn:hover {
+    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+    background-color:black;
+}

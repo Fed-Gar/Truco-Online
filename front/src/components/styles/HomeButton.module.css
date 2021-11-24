@@ -1,0 +1,14 @@
+.container img {
+    width: 2.5em;
+    height: 2.5em;
+
+    position: absolute;
+    left: .5em;
+    top: .5em;
+
+    border-radius: 50%;
+}
+
+.container img:hover {
+    transform: scale(1.1);
+}

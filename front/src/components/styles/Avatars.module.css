@@ -1,0 +1,78 @@
+.avatarsContainer {
+    width: 80%;
+    min-height: 12em;
+    max-height: 12em;
+
+    display: flex;
+
+    background-color: rgb(222, 222, 222);
+    border-radius: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 1em;
+
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.avatarsContainer::-webkit-scrollbar {
+  width: 9px;
+  height: 9px; 
+}
+
+.avatarsContainer::-webkit-scrollbar-thumb {
+  background: rgb(50, 50, 50);
+  border-radius: 4px;
+}
+
+.avatarsContainer::-webkit-scrollbar-thumb:hover {
+  background: rgb(125, 60, 30);
+}
+
+.avatarsContainer::-webkit-scrollbar-thumb:active {
+  background: rgb(141, 73, 37);
+}
+
+.avatarsContainer::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.avatarsContainer::-webkit-scrollbar-track:hover {
+  background: transparent;
+}
+
+.avatarsContainer::-webkit-scrollbar-track:active {
+  background: transparent;
+}
+
+.title {
+    margin-top: 1em;
+
+    font-size: 1.5rem;
+    color: white;
+}
+
+@media screen and (max-width: 1024px) {
+  .avatarsContainer {
+    min-height: 11em;
+    max-height: 11em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .avatarsContainer {
+    min-height: 10em;
+    max-height: 10em;
+  }
+  
+  .title {
+    font-size: 1.3rem;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+  .title {
+    font-size: 1rem;
+  }
+}

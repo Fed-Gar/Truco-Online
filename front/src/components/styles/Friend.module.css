@@ -1,0 +1,233 @@
+.mainDiv {
+  min-width: 10em;
+  height: 14em;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: var(--transBlackColor);
+
+  margin:0 .7em 0 0;
+  border-radius: 1rem;
+  padding: .5em;
+  background: linear-gradient(#ff5722, #ffa50094);
+  border: solid 2px;
+}
+
+.profileIconSmall {
+  /* width: 4.5em; */
+  /* height: auto; */
+  position: absolute;
+  top: 1em;
+  align-self: center;
+  border-radius: 50px;
+  width: 5em;
+  height: 5em;
+  top: 1em;
+}
+
+.btn {
+  width: 4.5em;
+  height: auto;
+  position: absolute;
+  bottom: 1em;
+  align-self: center;
+  border: none;
+  border-radius: 4px;
+  text-shadow: 0px 0px 10px rgb(0 0 0 / 50%);
+  overflow: hidden;
+  padding: 8px;
+  font-size: 1rem;
+  color: white;
+  outline: none;
+  cursor: pointer;
+  background: transparent;
+  background-image: url('../../img/button1.webp');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  text-decoration: none;
+  font-family: 'Crayon' ;
+}
+
+.pendingRequest{
+  width: 4.5em;
+  height: auto;
+  position: absolute;
+  bottom: 1em;
+  align-self: center;
+  border: none;
+  border-radius: 4px;
+  text-shadow: 0px 0px 10px rgb(0 0 0 / 50%);
+  overflow: hidden;
+  padding: 8px;
+  font-size: 1rem;
+  color: white;
+  outline: none;
+  background: transparent;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  text-decoration: none;
+  font-family: 'Crayon' ;
+  margin-bottom: 0px;
+  background-color: black;
+}
+
+.btnAccept {
+    position: absolute;
+    bottom: 4em;
+}
+
+.friendReq {
+    position: absolute;
+    top: 2.4em;
+}
+
+.btn:hover {
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+  transform : scale(1.1);
+}
+
+.div2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: center;
+}
+
+.name {
+  align-self: center;
+  /* margin-top: 1.5em; */
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+.status p, h3{
+  margin: 0px;
+}
+
+.status h3:hover{
+  border-bottom: solid 2px ;
+}
+
+.status p:last-child{
+  background-color: black;
+  padding: .1em;
+  border-radius: 5px;
+}
+
+.name:hover {
+  cursor: pointer;
+}
+
+.text{
+  align-self: center;
+}
+
+.status {
+  width: 100%;
+  height: 4em;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 2em;
+}
+
+@media screen and (max-width: 1024px) {
+  .mainDiv {
+    min-width: 9em;
+    height: 15em;
+  }
+
+  .profileIconSmall {
+    /* width: 3.5em; */
+    /* height: auto; */
+  
+    top: 1em;
+  
+  }
+
+  .friendReq {
+    top: 1.8em;
+  }
+
+  .status {
+    height: 4em;
+
+    /* margin-top: .5em; */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mainDiv {
+    min-width: 9em;
+    max-width: 9em;
+    height: 15em;
+  }
+
+  .profileIconSmall {
+    /* width: 3.5em; */
+    /* height: auto; */
+  
+    top: 1em;
+  
+  }
+
+  .friendReq {
+    top: 1.8em;
+  }
+
+  .status {
+    height: 4em;
+
+    /* margin-top: .5em; */
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .mainDiv {
+    min-width: 7em;
+    max-width: 7em;
+    height: 13em;
+    padding: 4em;
+  }
+
+  .mainDiv h3 {
+    font-size: 1.2rem;
+
+  }
+
+  .profileIconSmall {
+    /* width: 3em; */
+    /* height: auto; */
+    top: .7em;
+  }
+
+  .friendReq {
+    top: 1.8em;
+  }
+
+  .status {
+    height: 3.5em;
+
+    /* margin-top: .5em; */
+  }
+
+  .status p {
+    font-size: .8rem;
+  }
+
+  .btn {
+    width: 4.5em;
+    height: auto;
+
+    bottom: .8em;
+
+    padding: 4px;
+    font-size: .8rem;
+  }
+}

@@ -1,0 +1,98 @@
+.lobby {
+    margin-top: -60%;
+}
+
+.subMainDiv_noGame {
+    width: 100%;
+    height: 100%;
+    
+    background-image: url('../../../img/DarkWood_bg.webp');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: repeat;
+    
+    padding-top: 67%;
+}
+
+.div_Chat_Rooms {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    margin-top: 2%;
+    padding: 3%;
+}
+
+.div_CreateRoom_RoomsList {
+    width: 30%;
+
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.subMainDiv_inGame {
+    background-image: url('../../../img/woodBackground.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 0;
+    padding-top: 64%;
+}
+
+.game {
+    margin-top: -60%;
+}
+
+.title {
+    font-size: 3rem;
+    font-family: 'Crayon';
+    color: white;
+    text-shadow: black 1px 0 10px;
+    padding-top: 1em;
+}
+
+@media screen and (max-width: 1340px) {
+    .title {
+        padding-top: 1.2em;
+        font-size: 2.8rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+   .title {
+       font-size: 2.6rem;
+       padding-top: 1.4em;
+   }
+}
+
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 1.9rem;
+        padding-top: 2.2em;
+    }
+
+    .div_Chat_Rooms {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .div_CreateRoom_RoomsList {
+        margin-top: 3%;
+
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .title {
+        font-size: 1.5rem;
+        padding-top: 3em;
+    }
+}

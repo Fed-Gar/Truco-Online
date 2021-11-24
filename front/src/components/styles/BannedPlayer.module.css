@@ -1,0 +1,28 @@
+.mainContainer {
+  width: 100%;
+  height: 100vh;
+  background-image: url('../../img/Profile_bg.webp');
+  background-size: cover;
+  background-repeat: repeat;
+  padding-top: 6vh;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+.advice {
+  color: #dedede;
+  max-width: 1200px;
+  font-size: 1.5em;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 5vh 5vw 6vh;
+  border-radius: 2em;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logoutBtn {
+  border-radius: .5em;
+  padding: .3em;
+  font-weight: bold;
+}

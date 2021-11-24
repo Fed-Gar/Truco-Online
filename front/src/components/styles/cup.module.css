@@ -1,0 +1,165 @@
+.cupCard {
+    height: 350px;
+    width: 400px;
+
+    position: relative;
+
+    background-image: url('../../img/copa.webp');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    color:black;
+    text-decoration: none !important;
+    justify-content: center;
+}
+
+.cupCard p {
+    font-size: 1.2rem;
+}
+
+.cupCard h3 {
+    position: absolute;
+    bottom: 20%;
+    left: 1%;
+
+    font-size: 2rem;
+}
+
+.username {
+    position: absolute;
+    top: 23%;
+    left: 43%;
+}
+
+.won {
+    position: absolute;
+    top: 45%;
+    left: 47%;
+}
+
+.title {
+    position: absolute;
+    top: 35%;
+    left: auto;
+    right: auto;
+}
+
+.name {
+    justify-content: center;
+    margin-top: 23%;
+    margin-left: 37%;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.pos {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    font-weight: 800;
+    margin-left: 46%;
+}
+
+@media screen and (max-width: 1380px) {
+    .cupCard {
+        width: 300px;
+        height: 300px;
+    }
+        
+    .cupCard p {
+        font-size: 1rem;
+    }
+
+    .cupCard h3 {
+        position: absolute;
+        bottom: 20%;
+    }
+
+    .username {
+        position: absolute;
+        top: 23%;
+        left: 43%;
+    }
+
+    .won {
+        position: absolute;
+        top: 45%;
+        left: 47%;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+
+}
+
+@media screen and (max-width: 960px) {
+    .cupCard {
+        width: 250px;
+        height: 250px;
+    }
+
+    .cupCard h3 {
+        position: absolute;
+        bottom: 20%;
+        
+        font-size: 1.8rem;
+    }
+    
+    .username {
+        position: absolute;
+        top: 22%;
+        left: 40%;
+        right: auto;
+    }
+    
+    .won {
+        position: absolute;
+        top: 43%;
+        left: 48%;
+    }
+    
+    .title {
+        position: absolute;
+        top: 35%;
+        left: auto;
+        right: auto;
+    }
+} 
+
+@media screen and (max-width: 768px) {
+    .cupCard {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .cupCard p {
+        font-size: .8rem;
+    }
+
+    .cupCard h3 {
+        position: absolute;
+        bottom: 20%;
+        
+        font-size: 1.5rem;
+    }
+    
+    .username {
+        position: absolute;
+        top: 22%;
+        left: 40%;
+        right: auto;
+    }
+    
+    .won {
+        position: absolute;
+        top: 43%;
+        left: 48%;
+    }
+    
+    .title {
+        position: absolute;
+        top: 35%;
+        left: auto;
+        right: auto;
+    }
+} 

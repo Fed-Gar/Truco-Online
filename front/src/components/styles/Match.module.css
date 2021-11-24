@@ -1,0 +1,87 @@
+.mainDiv {
+  min-width: 12em;
+  height: 12em;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+
+  background-color: var(--blackBoardColor);
+
+  border-radius: 50%;
+}
+
+.div {
+  width: 80%;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute; 
+}
+
+.div1 {
+  top: 20%;
+  right: auto;
+  left: auto;
+}
+
+.div p {
+  margin-top: -1.3em;
+  font-size: 1.2em;
+}
+
+.div2 {
+  top: 50%;
+  right: auto;
+  left: auto;
+}
+
+.div3 {
+  bottom: 0;
+  right: auto;
+  left: auto;
+}
+
+@media screen and (max-width: 1340px) {
+  .mainDiv {
+    min-width: 10em;
+    height: 10em;
+  }
+
+  .div p {
+    margin-top: -1.2em;
+    font-size: 1em;
+  }
+
+  .div1 {
+    top: 16%;
+    right: auto;
+    left: auto;
+  }
+ 
+  .div2 {
+    top: 45%;
+    right: auto;
+    left: auto;
+  }
+  
+  .div3 {
+    bottom: 0;
+    right: auto;
+    left: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .div p {
+    margin-top: -1.2em;
+    font-size: .9em;
+  }
+}

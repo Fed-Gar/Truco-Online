@@ -1,0 +1,105 @@
+.board {
+    
+    height: 100%;
+}
+
+.title {
+    color: white;
+    font-family: 'Crayon';
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-top: 5%;
+
+}
+
+.botones {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2%;
+}
+
+.boton {
+    background: transparent;
+    font-family: 'Crayon';
+    font-size: 25px;
+    border: transparent;
+    color:white;
+    padding-left: 5%;   
+}
+.boton:hover {
+    transform: scale(1.3);
+    color: lightgray
+}
+
+.card{
+    height: 250px;
+    width: 200px;
+}
+
+.cartas {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-around;
+    align-content: flex-start;
+
+    color: white;
+    font-size: 20px;
+    font-family: 'Crayon';
+}
+
+.next {
+    position: absolute;
+    bottom: 6%;
+}
+
+.envido {
+    width: 100%;
+    height: auto;
+    padding-top: 5%;
+}
+
+@media screen and (max-width: 1240px) {
+    .title {
+        font-size: 1.1rem;
+    }
+
+    .boton {
+        font-size: 1.1rem;
+    }
+
+    .cartas {
+        margin-top: 3em;
+    }
+
+    .card {
+        width: 9em;
+        height: 12em;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .card {
+        width: 7em;
+        height: 10em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 1rem;
+    }
+
+    .boton {
+        font-size: 1rem;
+    }
+
+    .card {
+        width: 5em;
+        height: 8em;
+    }
+
+}

@@ -1,0 +1,667 @@
+.mainDiv {
+    width: 100%;
+    height: 100vh;
+
+    background-image: url('../../img/Profile_bg.webp');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    
+    padding-top: 67%;
+}
+
+.subMainDiv {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    margin-top: -60%;
+}
+
+.logoutBtn {
+    position: absolute;
+    right: 1.5em;
+    padding: 3px;
+    font-size: .9em;
+    letter-spacing: 1px;
+    opacity: 0.5;
+    transition: opacity .45s;
+    transition: transform .45s;
+
+    border: none;
+    top: 5px;
+    border-radius: 5px;
+    visibility: hidden;
+}
+
+.logoutBtn::before {
+    visibility: visible;
+    color: white;
+    content: 'Cerrar Sesión';
+    opacity: 0.8;
+    font-size: .9rem;
+}
+
+.logoutBtn:hover {
+    opacity: 1;
+    transition: transform .45s;
+    transform: scale(1.1);
+}
+
+.player {
+    width: 58%;
+    height: 70%;
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    margin-top: 3em;
+}
+
+.profileIcon {
+    position: relative;
+    border-radius: 80px;
+    top: 40px;
+    z-index: 500;
+    border: solid 1px;
+    /* width: 8.5em; */
+    margin-top: .8em;
+    background-color: #ffffffd6;
+    height: 170px;
+    width: 180px;
+    border: solid 2px white;
+    box-shadow: 0px 0px 15px 5px black;
+    animation: image 3s 1;
+}
+
+@keyframes image {
+    0%{
+        top: -100px;
+    }
+
+    
+}
+
+.playerInfo {
+    width: 100%;
+    max-height: 60%;
+    box-shadow: 0px 0px 5px #505050;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    /* # */
+    background-color: var(--transBlackColor);
+    color: white;
+    padding: 2em;
+    border-radius: var(--bRadius);
+}
+
+.playerInfo p {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 0px;
+    color: white;
+
+
+    -webkit-text-stroke: 1px black;
+}
+
+.playerInfo p:last-child {
+    background: linear-gradient(#ff5722, #ffa50036);
+    padding: .2em;
+    border-radius: 10px;
+}
+
+.playerInfo p:first-child {
+    font-size: 1.6em;
+}
+
+.gamesAndTournamentsStats {
+    display: flex;
+}
+
+.games {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.games::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 36%;
+    height: 44%;
+    /* border: 1px #aaaaaa solid; */
+    border-radius: 10px;
+    background-color: #ffffcc;
+    padding: 2px;
+    color: #000000;
+    font-size: 14px;
+    z-index: 1;
+    left: 49%;
+}
+
+.statsTitle {
+    color: grey;
+    padding-top: .7em;
+    padding-bottom: 1.1em;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 4px;
+    /* position: relative; */
+    animation: text 3s 1;
+    -webkit-text-stroke: 1px black;
+}
+
+@keyframes text {
+    0% {
+        color: black;
+        margin-bottom: -25px;
+    }
+    30% {
+        letter-spacing: 25px;
+        margin-bottom: -40px;
+    }
+}
+
+.statsTitle::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 28%;
+    width: 80%;
+    /* border: 1px #aaaaaa solid; */
+    border-radius: 10px;
+    background-color: #80808059;
+    padding: 1px;
+    color: #000000;
+    font-size: 14px;
+    z-index: 1;
+    left: 11%;
+}
+
+.editBtn {
+    width: auto;
+
+    position: absolute;
+    top: 1em;
+    left: 1em;
+
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    background: transparent;
+    background-image: url('../../img/button1.webp');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    transform: scale(1.2);
+    color: white;
+    font-family: 'Crayon';
+
+    font-size: 1rem;
+
+    transition: transform .45s;
+}
+
+.editBtn:hover {
+    transition: transform .45s;
+    transform: scale(1.3);
+}
+
+.playerInfo_Games {
+    width: 20em;
+    height: 5em;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.infoGames {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.friends {
+    width: 100%;
+    min-height: 32em;
+    max-height: 32em;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    background-color: rgb(17, 17, 17);
+    
+    color: rgb(256,256,256);
+    padding: 2em;
+}
+
+.friendsDiv {
+    width: 48%;
+    min-height: 30em;
+    max-height: 30em;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    padding: 1em;
+}
+
+.text {
+    margin-left: 28%;
+
+    font-size: 1.3em;
+    color: black;
+}
+
+.title {
+    position: absolute;
+    top: 0;
+    left: auto;
+    right: auto;
+}
+
+.friendsList {
+    width: 90%;
+    height: 60vh;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-self: center;
+
+    background-color: rgba(255, 255, 255, 0.6);
+    -webkit-box-shadow: 5px 5px 20px 5px rgba(222,222,222,0.1); 
+    box-shadow: 5px 5px 20px 5px rgba(222,222,222,0.1);
+    padding: 1em;
+    border-radius: 1em;
+
+    overflow-x: scroll;
+    overflow-y: hidden;
+
+    margin-top: 5%;
+}
+
+.friendsList::-webkit-scrollbar {
+  width: 9px;
+  height: 9px; 
+}
+
+.friendsList::-webkit-scrollbar-thumb {
+  background: rgb(50, 50, 50);
+  border-radius: 4px;
+}
+
+.friendsList::-webkit-scrollbar-thumb:hover {
+  background: rgb(125, 60, 30);
+}
+
+.friendsList::-webkit-scrollbar-thumb:active {
+  background: rgb(141, 73, 37);
+}
+
+.friendsList::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.friendsList::-webkit-scrollbar-track:hover {
+  background: transparent;
+}
+
+.friendsList::-webkit-scrollbar-track:active {
+  background: transparent;
+}
+
+.lastResults {
+    width: 100%;
+    min-height: 18em;
+    max-height: 18em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: var(--transBlackColor);
+    color: #dedede;
+    margin-top: 2em;
+}
+
+.history {
+    width: 80%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: auto;
+}
+
+.playerName {
+    margin-bottom: .8rem;
+}
+
+/* Esto es para el modal dentro de profile */
+.btnDiv {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.modalTextCont {
+    width: 90%;
+    height: auto;
+}
+
+.btnDiv button {
+    width: auto;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    background: transparent;
+    background-image: url('../../img/button1.webp');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    transform: scale(1.2);
+    color: white;
+    font-family: 'Crayon';
+    /* cuando vuelve */
+    /* ok */
+    transition: transform .45s;
+}
+
+.rightBtn {
+    right: 1.5em;
+}
+
+.leftBtn{
+    left: 1.5em;
+}
+
+.btnDiv button:hover{
+ /* cuando se va */
+ transition: transform .45s;
+ transform: scale(1.3);
+}
+
+.successDiv {
+    position: relative;
+    top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.successBtn {
+    padding: 3px;
+    border: none;
+    width: 50px;
+    border-radius: 5px;
+    margin: 20px 0px;
+    position: relative;
+    display: block;
+    background: transparent;
+    background-image: url('../../img/button1.webp');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    transform: scale(1.2);
+    color: white;
+    /* cuando vuelve */
+    /* ok */
+    transition: transform .45s;
+}
+
+@media screen and (max-width: 1280px) {
+    .profileIcon {
+        width: 8em;
+    }
+
+    .player {
+        width: 70%;
+        height: 75%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .logoutBtn {
+        right: 1em;
+    }
+
+    .profileIcon {
+        /* width: 7.5em; */
+        height: 140px;
+        width: 145px;
+        margin-top: .8em;
+    }
+
+    .player {
+        width: 75%;
+    }
+
+    .editBtn {
+        font-size: .8em;
+    }
+
+    .playerInfo_Games {
+        width: 15em;
+    }
+
+    .friends {
+        width: 100%;
+        min-height: 28em;
+        max-height: 28em;
+    }
+
+    .friendsDiv {
+        width: 48%;
+        min-height: 26em;
+        max-height: 26em;
+    }
+
+    .friendsList {
+        min-height: 50vh;
+        max-height: 50vh;
+    }
+
+    .history {
+        justify-content: space-between;
+
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+
+    .history::-webkit-scrollbar {
+        width: 9px;
+        height: 9px; 
+    }
+
+    .history::-webkit-scrollbar-thumb {
+     background: rgb(50, 50, 50);
+        border-radius: 4px;
+    }
+
+    .history::-webkit-scrollbar-thumb:hover {
+        background: rgb(125, 60, 30);
+    }
+
+    .history::-webkit-scrollbar-thumb:active {
+        background: rgb(141, 73, 37);
+    }
+
+    .history::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    .history::-webkit-scrollbar-track:hover {
+        background: transparent;
+    }
+
+    .history::-webkit-scrollbar-track:active {
+        background: transparent;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .logoutBtn {
+        right: 1em;
+    }
+
+    .statsTitle {
+        font-size: 1.3rem;
+    }
+
+    .statsTitle::after{
+        top: 15%;
+        width: 60%;
+        font-size: 14px;
+        z-index: 1;
+        left: 20%;
+    }
+
+    .games::after {
+        width: 50%;
+        height: 1%;
+        
+        top: 60%;
+        left: 25%;
+    }
+
+    .profileIcon {
+
+        /* width: 6em; */
+        height: 140px;
+        width: 145px;
+
+        margin-top: 1.8em;
+    }
+
+    .player {
+        width: 70%;
+    }
+
+    .playerInfo {
+        width: 100%;
+        max-height: 80%;
+
+        padding: 1em;
+    }
+    
+    .playerInfo h3 {
+        font-size: 1.4rem;
+    }
+    
+    .playerInfo p {
+        font-size: 1.1rem;
+    }
+
+    .gamesAndTournamentsStats {
+        flex-direction: column;
+    }
+
+    .friends {
+        min-height: 52em;
+        max-height: 52em;
+
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .friendsDiv {
+        width: 100%;
+        min-height: 25em;
+        max-height: 25em;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .friendsList {
+        width: 90%;
+        max-height: 50vh;
+        min-height: 50vh;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .editBtn {
+        top: .5em;
+        right: .5em;
+
+        font-size: .6rem;
+    }
+
+    .player {
+        width: 80%;
+    }
+
+    .playerInfo h3 {
+        font-size: 1.1rem;
+    }
+    
+    .playerInfo p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .friends {
+        min-height: 45em;
+        max-height: 45em;
+    }
+    
+    .friendsDiv {
+        min-height: 22em;
+        max-height: 22em;
+    }
+
+    .playerInfo_Games {
+        width: 9em;
+    }
+
+
+    .friendsList {
+        max-height: 40vh;
+        min-height: 40vh;
+    }
+
+    .player {
+        width: 80%;
+    }
+    
+    .playerInfo {
+        padding: 1em;
+    }
+
+    .playerInfo h3 {
+        font-size: 0.9rem;
+    }
+    
+    .playerInfo p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 335px) {
+    .playerInfo {
+        width: 300px;
+    }
+}
