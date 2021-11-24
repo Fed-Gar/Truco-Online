@@ -1,0 +1,31 @@
+/* Default Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: 'Crayon';
+  src: local('Crayon'), url(./fonts/CrayonHandRegular2016Demo.ttf) format('truetype');
+}
+/* Variables */
+:root {
+  --fontFamily:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif; 
+  --fontColor: rgb(0, 0, 0);
+  --fontColorHover: rgb(39, 39, 39);
+  --tableColor: rgb(74, 173, 74);
+  --blackBoardColor: rgb(67, 71, 80);
+  --tableBorder: rgb(169, 85, 85);
+  --transBlackColor: rgba(1,1,1, .5);
+  --modalContBC: rgba(221, 3, 3, 0.9);
+  --bRadius: 1em;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+
+  font-family: var(--fontFamily);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
