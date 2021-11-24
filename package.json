@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.1.0",
+    "cloudinary": "^1.27.0",
+    "react-bootstrap": "^2.0.0-beta.6",
+    "react-facebook-login": "^4.1.1",
+    "react-icons": "^4.2.0"
+  }
+}
